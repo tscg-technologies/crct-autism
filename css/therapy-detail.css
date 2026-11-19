@@ -1,0 +1,1061 @@
+/* ==========================================================================
+   CRCT INDIVIDUAL THERAPY DETAIL & BLOG PAGES
+   Strictly adheres to CRCT Design System & Brand Typography
+   Colors:
+     --primary: #245C59 (Deep Teal)
+     --secondary: #78A69A (Sage Green)
+     --warm-ivory: #F7F5EF
+     --pale-mint: #E7EFE9
+     --soft-sand: #D9AD79
+     --charcoal: #293735
+   Typography:
+     Heading: 'Manrope', sans-serif
+     Body: 'Inter', sans-serif
+   ========================================================================== */
+
+:root {
+  --therapy-teal: #245C59;
+  --therapy-sage: #78A69A;
+  --therapy-ivory: #F7F5EF;
+  --therapy-mint: #E7EFE9;
+  --therapy-sand: #D9AD79;
+  --therapy-charcoal: #293735;
+  --therapy-body: #4F5E5A;
+  --therapy-border: rgba(36, 92, 89, 0.14);
+}
+
+.therapy-page {
+  background: #FFFFFF;
+  color: var(--therapy-charcoal);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.75;
+  overflow-x: clip;
+}
+
+.therapy-hero h1,
+.therapy-hero h2,
+.therapy-article-section h2,
+.therapy-article-section h3,
+.therapy-article-section h4 {
+  font-family: 'Manrope', sans-serif;
+  color: var(--therapy-charcoal);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.therapy-article-section p,
+.therapy-hero-lead {
+  color: var(--therapy-body);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   1. CATEGORY HERO BANNER
+   ========================================================================== */
+
+.therapy-hero {
+  padding: clamp(50px, 7vw, 90px) 0;
+  background: linear-gradient(180deg, var(--therapy-ivory) 0%, #FFFFFF 100%);
+  border-bottom: 1px solid var(--therapy-border);
+}
+
+.therapy-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(36px, 5vw, 64px);
+  align-items: center;
+}
+
+.therapy-hero-copy {
+  max-width: 640px;
+}
+
+/* Breadcrumbs */
+.therapy-breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--therapy-body);
+}
+
+.therapy-breadcrumbs a {
+  color: var(--therapy-teal);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.therapy-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.therapy-breadcrumbs span.sep {
+  opacity: 0.5;
+  font-size: 11px;
+}
+
+.therapy-breadcrumbs span.current {
+  color: var(--therapy-charcoal);
+  font-weight: 700;
+}
+
+/* Eyebrow Pill */
+.therapy-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--therapy-mint);
+  color: var(--therapy-teal);
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.therapy-hero-title {
+  font-size: clamp(32px, 4.2vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+  margin-bottom: 20px;
+  color: var(--therapy-charcoal);
+}
+
+.therapy-hero-title span {
+  color: var(--therapy-teal);
+}
+
+.therapy-hero-lead {
+  font-size: clamp(16px, 1.6vw, 18px);
+  line-height: 1.8;
+  color: #3F4F4B;
+  margin-bottom: 28px;
+}
+
+/* Hero Attribute Chips */
+.therapy-hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.therapy-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #FFFFFF;
+  border: 1px solid var(--therapy-border);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--therapy-teal);
+}
+
+.therapy-chip i {
+  color: var(--therapy-sage);
+  font-size: 14px;
+}
+
+.therapy-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 24px;
+  background: var(--therapy-teal);
+  color: #FFFFFF;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(36, 92, 89, 0.22);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-hero-primary:hover {
+  background: #1c4946;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(36, 92, 89, 0.3);
+}
+
+.btn-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 22px;
+  background: #FFFFFF;
+  border: 1px solid var(--therapy-border);
+  color: var(--therapy-teal);
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-hero-secondary:hover {
+  background: var(--therapy-mint);
+  border-color: var(--therapy-teal);
+}
+
+/* Hero Image Visual */
+.therapy-hero-visual {
+  position: relative;
+}
+
+.therapy-hero-img-wrap {
+  width: 100%;
+  aspect-ratio: 1.22;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(41, 55, 53, 0.12);
+  border: 1px solid var(--therapy-border);
+  background: var(--therapy-mint);
+}
+
+.therapy-hero-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.therapy-hero-badge {
+  position: absolute;
+  bottom: -16px;
+  left: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: #FFFFFF;
+  border: 1px solid var(--therapy-border);
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(41, 55, 53, 0.1);
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--therapy-charcoal);
+}
+
+.therapy-hero-badge i {
+  color: var(--therapy-teal);
+  font-size: 18px;
+}
+
+/* ==========================================================================
+   2. DETAILED BLOG / INFORMATION CONTENT
+   ========================================================================== */
+
+.therapy-article-section {
+  padding: clamp(60px, 8vw, 100px) 0;
+  background: #FFFFFF;
+}
+
+.therapy-article-layout {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Content Blocks */
+.content-block {
+  margin-bottom: 54px;
+}
+
+.content-block:last-child {
+  margin-bottom: 0;
+}
+
+.content-block-eyebrow {
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--therapy-teal);
+  margin-bottom: 10px;
+}
+
+.content-block-title {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--therapy-charcoal);
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.content-block-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 44px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--therapy-sage);
+}
+
+.content-lead-p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: #2F3E3B;
+  font-weight: 500;
+}
+
+/* Feature Callout Box (e.g. Why It Matters) */
+.therapy-callout {
+  padding: 30px 34px;
+  background: var(--therapy-ivory);
+  border-left: 4px solid var(--therapy-teal);
+  border-radius: 0 16px 16px 0;
+  margin: 28px 0 32px;
+}
+
+.therapy-callout h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--therapy-teal);
+  margin-bottom: 10px;
+}
+
+.therapy-callout p {
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #435450;
+  line-height: 1.8;
+}
+
+/* Techniques & Activities Grid */
+.techniques-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 26px;
+}
+
+.technique-card {
+  padding: 24px;
+  background: #FFFFFF;
+  border: 1px solid var(--therapy-border);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(41, 55, 53, 0.04);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.technique-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--therapy-teal);
+  box-shadow: 0 12px 28px rgba(36, 92, 89, 0.09);
+}
+
+.technique-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--therapy-mint);
+  color: var(--therapy-teal);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.technique-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--therapy-charcoal);
+  margin-bottom: 10px;
+}
+
+.technique-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--therapy-body);
+  margin-bottom: 0;
+}
+
+/* Skills Checklist Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+  margin-top: 24px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  background: var(--therapy-ivory);
+  border-radius: 12px;
+  border: 1px solid rgba(36, 92, 89, 0.08);
+}
+
+.skill-item i {
+  color: var(--therapy-teal);
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.skill-item-copy strong {
+  display: block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  color: var(--therapy-charcoal);
+  margin-bottom: 2px;
+}
+
+.skill-item-copy span {
+  font-size: 13px;
+  color: var(--therapy-body);
+  line-height: 1.6;
+}
+
+/* Everyday Life Benefits Cards */
+.benefits-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.benefit-card {
+  padding: 22px 20px;
+  background: var(--therapy-mint);
+  border-radius: 16px;
+  border: 1px solid rgba(36, 92, 89, 0.1);
+}
+
+.benefit-card-icon {
+  font-size: 20px;
+  color: var(--therapy-teal);
+  margin-bottom: 12px;
+}
+
+.benefit-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--therapy-charcoal);
+  margin-bottom: 8px;
+}
+
+.benefit-card p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--therapy-body);
+  margin-bottom: 0;
+}
+
+/* When Parents May Consider Guidance - Guidance Box */
+.guidance-box {
+  padding: 34px;
+  background: #FFFFFF;
+  border: 2px solid var(--therapy-border);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(41, 55, 53, 0.05);
+}
+
+.guidance-box-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.guidance-icon-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--therapy-mint);
+  color: var(--therapy-teal);
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.guidance-box-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--therapy-charcoal);
+  margin-bottom: 0;
+}
+
+.guidance-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 24px;
+}
+
+.guidance-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #384845;
+  line-height: 1.7;
+}
+
+.guidance-list li i {
+  color: var(--therapy-sage);
+  font-size: 14px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.guidance-disclaimer {
+  padding: 14px 18px;
+  background: var(--therapy-ivory);
+  border-radius: 10px;
+  font-size: 13px;
+  color: #556662;
+  line-height: 1.65;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ==========================================================================
+   3. CALL TO ACTION SECTION
+   ========================================================================== */
+
+.therapy-cta-section {
+  padding: clamp(60px, 7vw, 90px) 0;
+  background: var(--therapy-teal);
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.therapy-cta-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.therapy-cta-eyebrow {
+  display: inline-block;
+  color: #A9D0C0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.therapy-cta-title,
+.therapy-cta-section h2,
+.therapy-page #main-content .therapy-cta-title {
+  color: #FFFFFF !important;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.22;
+  margin-bottom: 18px;
+}
+
+.therapy-cta-desc,
+.therapy-cta-section p.therapy-cta-desc,
+.therapy-page #main-content .therapy-cta-desc {
+  color: #FFFFFF !important;
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.8;
+  margin: 0 auto 34px;
+  max-width: 600px;
+}
+
+.therapy-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-cta-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: #FFFFFF;
+  color: var(--therapy-teal);
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.btn-cta-phone:hover {
+  background: var(--therapy-ivory);
+  transform: translateY(-2px);
+}
+
+.btn-cta-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: transparent;
+  color: #FFFFFF;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  border-radius: 8px;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-cta-contact:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.therapy-cta-meta,
+.therapy-cta-section p.therapy-cta-meta,
+.therapy-page #main-content .therapy-cta-meta {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #FFFFFF !important;
+  opacity: 0.92;
+}
+
+/* ==========================================================================
+   4. RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .therapy-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .therapy-hero-copy {
+    max-width: 100%;
+  }
+
+  .therapy-hero-visual {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .benefits-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .techniques-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-row {
+    grid-template-columns: 1fr;
+  }
+
+  .guidance-list {
+    grid-template-columns: 1fr;
+  }
+
+  .guidance-box {
+    padding: 24px 20px;
+  }
+
+  .therapy-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-hero-primary,
+  .btn-hero-secondary {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .therapy-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-cta-phone,
+  .btn-cta-contact {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .therapy-hero {
+    padding: 42px 0 50px;
+  }
+
+  .therapy-article-section {
+    padding: 48px 0;
+  }
+
+  .therapy-hero-badge {
+    position: static;
+    margin-top: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .therapy-callout {
+    padding: 22px 20px;
+  }
+}
+
+/* ==========================================================================
+   4. COMMON FOOTER (STRICT FIDELITY WITH HOMEPAGE FOOTER DESIGN & RESPONSIVENESS)
+   ========================================================================== */
+
+.therapy-page .crct-footer {
+  background: #245C59 !important;
+  color: #FFFFFF !important;
+  padding: 75px 0 0 !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.therapy-page .footer-main {
+  display: grid !important;
+  grid-template-columns: 1.5fr 1fr 1.15fr 1.5fr !important;
+  gap: 40px !important;
+  padding-bottom: 50px !important;
+}
+
+.therapy-page .footer-brand {
+  max-width: 310px !important;
+}
+
+.therapy-page .footer-logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 90px !important;
+  height: 85px !important;
+  margin-bottom: 22px !important;
+}
+
+.therapy-page .footer-logo img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #FFFFFF !important;
+  border-radius: 8px !important;
+  padding: 5px !important;
+}
+
+.therapy-page .footer-brand > p {
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.9 !important;
+  margin-bottom: 22px !important;
+}
+
+.therapy-page .footer-socials {
+  display: flex !important;
+  align-items: center !important;
+  gap: 11px !important;
+}
+
+.therapy-page .footer-socials a {
+  width: 36px !important;
+  height: 36px !important;
+  display: grid !important;
+  place-items: center !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 50% !important;
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: background 0.3s ease, color 0.3s ease !important;
+}
+
+.therapy-page .footer-socials a:hover {
+  background: #FFFFFF !important;
+  color: #245C59 !important;
+}
+
+.therapy-page .footer-column h3 {
+  color: #FFFFFF !important;
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  margin-bottom: 24px !important;
+  position: relative !important;
+}
+
+.therapy-page .footer-column h3::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -10px !important;
+  width: 35px !important;
+  height: 2px !important;
+  border-radius: 5px !important;
+  background: #78A69A !important;
+}
+
+.therapy-page .footer-column ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.therapy-page .footer-column ul li {
+  margin-bottom: 13px !important;
+}
+
+.therapy-page .footer-column ul li a {
+  color: rgba(255, 255, 255, 0.76) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease, padding-left 0.3s ease !important;
+}
+
+.therapy-page .footer-column ul li a:hover,
+.therapy-page .footer-column ul li a:focus-visible {
+  color: #FFFFFF !important;
+  padding-left: 5px !important;
+}
+
+.therapy-page .footer-contact-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  margin-bottom: 18px !important;
+}
+
+.therapy-page .footer-contact-item i {
+  flex-shrink: 0 !important;
+  margin-top: 4px !important;
+  color: #A9D0C0 !important;
+  font-size: 15px !important;
+}
+
+.therapy-page .footer-contact-item p,
+.therapy-page .footer-contact-item a {
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.8 !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+  overflow-wrap: anywhere !important;
+}
+
+.therapy-page .footer-contact-item a:hover {
+  color: #FFFFFF !important;
+}
+
+.therapy-page .footer-hours {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 15px !important;
+  padding: 23px 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.17) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17) !important;
+}
+
+.therapy-page .footer-hours > div {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.therapy-page .footer-hours i {
+  color: #A9D0C0 !important;
+  font-size: 17px !important;
+}
+
+.therapy-page .footer-hours strong {
+  color: #FFFFFF !important;
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+.therapy-page .footer-hours p {
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.8 !important;
+  margin: 0 !important;
+}
+
+.therapy-page .footer-hours p span {
+  color: #FFFFFF !important;
+  font-weight: 500 !important;
+}
+
+.therapy-page .footer-hours-separator {
+  padding: 0 8px !important;
+  opacity: 0.5 !important;
+}
+
+.therapy-page .footer-bottom {
+  min-height: 75px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 15px !important;
+}
+
+.therapy-page .footer-bottom p {
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
+.therapy-page .footer-back-top {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  color: #FFFFFF !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+.therapy-page .footer-back-top span {
+  width: 27px !important;
+  height: 27px !important;
+  display: grid !important;
+  place-items: center !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  transition: background 0.3s ease !important;
+}
+
+.therapy-page .footer-back-top:hover span {
+  background: #78A69A !important;
+}
+
+/* Footer Responsive Breakpoints */
+@media (max-width: 1100px) {
+  .therapy-page .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 40px 35px !important;
+  }
+
+  .therapy-page .footer-brand {
+    max-width: 400px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .therapy-page .crct-footer {
+    padding-top: 60px !important;
+  }
+
+  .therapy-page .footer-main {
+    gap: 35px 25px !important;
+  }
+
+  .therapy-page .footer-hours {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .therapy-page .crct-footer {
+    padding-top: 50px !important;
+  }
+
+  .therapy-page .footer-main {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    padding-bottom: 35px !important;
+  }
+
+  .therapy-page .footer-brand {
+    max-width: 100% !important;
+  }
+
+  .therapy-page .footer-logo {
+    width: 90px !important;
+    height: 85px !important;
+  }
+
+  .therapy-page .footer-column h3 {
+    font-size: 16px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .therapy-page .footer-column ul li {
+    margin-bottom: 11px !important;
+  }
+
+  .therapy-page .footer-hours {
+    padding: 20px 0 !important;
+    gap: 10px !important;
+  }
+
+  .therapy-page .footer-hours p {
+    font-size: 12px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    row-gap: 4px !important;
+  }
+
+  .therapy-page .footer-hours-separator {
+    padding: 0 5px !important;
+  }
+
+  .therapy-page .footer-bottom {
+    padding: 20px 0 !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 13px !important;
+  }
+
+  .therapy-page .footer-bottom p {
+    font-size: 11px !important;
+  }
+}
