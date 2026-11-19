@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRCT | Carl Rogers Counselling and Therapy Centre</title>
+  <link rel="icon" type="image/png" href="assets/logo/crct-logo.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- ================= CRCT NAVBAR ================= -->
+
+  <header class="crct-header" id="crctHeader">
+    <nav class="crct-navbar container" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="index.html" class="crct-logo" aria-label="CRCT Home">
+        <img src="assets/logo/crct-logo.png" alt="Carl Rogers Counselling and Therapy Centre">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-menu" id="navMenu">
+        <li>
+          <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-link">About Us</a>
+        </li>
+        <li>
+          <a href="services.html" class="nav-link">Services</a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </li>
+
+        <!-- Mobile CTA -->
+        <li class="mobile-cta">
+          <a href="contact.html" class="nav-cta">
+            Book a Consultation
+            <span aria-hidden="true">↗</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <a href="contact.html" class="nav-cta desktop-cta">
+        Book a Consultation
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= CRCT HERO CAROUSEL ================= -->
+
+    <!-- CRCT IMAGE-ONLY HERO CAROUSEL -->
+
+    <section class="crct-hero" id="home">
+
+      <div class="hero-carousel" id="heroCarousel" role="region" aria-label="CRCT image carousel"
+        aria-roledescription="carousel" tabindex="0">
+
+        <div class="hero-slide active" id="hero-slide-1" role="group" aria-roledescription="slide" aria-label="1 of 4">
+          <img src="assets/images/hero-01.jpg" alt="CRCT therapy centre" loading="eager" fetchpriority="high"
+            decoding="async">
+        </div>
+
+        <div class="hero-slide" id="hero-slide-2" role="group" aria-roledescription="slide" aria-label="2 of 4">
+          <img src="assets/images/hero-02.jpg" alt="Child development support" loading="lazy" decoding="async">
+        </div>
+
+        <div class="hero-slide" id="hero-slide-3" role="group" aria-roledescription="slide" aria-label="3 of 4">
+          <img src="assets/images/hero-03.jpg" alt="Therapy services" loading="lazy" decoding="async">
+        </div>
+
+        <div class="hero-slide" id="hero-slide-4" role="group" aria-roledescription="slide" aria-label="4 of 4">
+          <img src="assets/images/hero-04.jpg" alt="Family support" loading="lazy" decoding="async">
+        </div>
+
+        <!-- Navigation arrows -->
+
+        <button class="hero-arrow prev-arrow" type="button" aria-label="Previous image" aria-controls="heroCarousel">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M15 18l-6-6 6-6"></path>
+          </svg>
+        </button>
+
+        <button class="hero-arrow next-arrow" type="button" aria-label="Next image" aria-controls="heroCarousel">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M9 18l6-6-6-6"></path>
+          </svg>
+        </button>
+
+        <!-- Pagination -->
+
+        <div class="hero-pagination" role="group" aria-label="Choose a carousel image">
+          <button class="hero-dot active" type="button" aria-label="Show image 1" aria-controls="hero-slide-1"
+            aria-current="true"></button>
+          <button class="hero-dot" type="button" aria-label="Show image 2" aria-controls="hero-slide-2"></button>
+          <button class="hero-dot" type="button" aria-label="Show image 3" aria-controls="hero-slide-3"></button>
+          <button class="hero-dot" type="button" aria-label="Show image 4" aria-controls="hero-slide-4"></button>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- about us section -->
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-section" id="about">
+      <div class="container">
+
+        <div class="about-wrapper">
+
+          <!-- Left: Image -->
+          <div class="about-image">
+            <img src="assets/images/about-crct.jpg" alt="Child receiving professional therapy at CRCT" loading="lazy">
+
+            <div class="about-image-badge">
+              <span class="badge-number">10+</span>
+              <span class="badge-text">Years of Care & Experience</span>
+            </div>
+          </div>
+
+          <!-- Right: Content -->
+          <div class="about-content">
+
+            <span class="section-tag">ABOUT OUR CENTRE</span>
+
+            <h2>
+              Supporting Every Child's
+              <span>Unique Journey</span>
+            </h2>
+
+            <p class="about-intro">
+              Welcome to Carl Rogers Counselling and Therapy Centre,
+              a dedicated space committed to supporting children and
+              families through personalised counselling, therapy,
+              and developmental care.
+            </p>
+
+            <p>
+              At CRCT, we believe every child has unique strengths
+              and abilities. Our approach focuses on understanding
+              individual needs, encouraging development, and
+              empowering families through compassionate guidance
+              and professional support.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                Individualised Therapy Plans
+              </div>
+
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                Child-Centred Approach
+              </div>
+
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                Family-Focused Support
+              </div>
+
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                Multidisciplinary Team
+              </div>
+            </div>
+
+            <a href="#contact" class="about-cta">
+              Book a Consultation
+              <span>→</span>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="about-stats">
+
+          <div class="stat-item">
+            <h3>10+</h3>
+            <p>Years of Experience</p>
+          </div>
+
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Children Supported</p>
+          </div>
+
+          <div class="stat-item">
+            <h3>10+</h3>
+            <p>Qualified Professionals</p>
+          </div>
+
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Therapy & Support Services</p>
+          </div>
+
+        </div>
+
+        <!-- Team Introduction -->
+        <div class="about-team">
+
+          <div class="team-content">
+            <span class="section-tag">OUR PEOPLE, OUR STRENGTH</span>
+
+            <h2>Meet the Team Behind <span>Every Little Progress</span></h2>
+
+            <p>
+              Our dedicated team brings together professionals
+              from different areas of child development and therapy.
+              Working collaboratively, they aim to provide
+              personalised support for every child and family.
+            </p>
+
+            <a href="#team" class="team-link">
+              Meet Our Team <span>→</span>
+            </a>
+          </div>
+
+          <div class="team-image">
+            <img src="assets/images/crct-team.jpg" alt="CRCT professional therapy team" loading="lazy">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================
+         CUSTOMER TESTIMONIALS SECTION
+    ===================================== -->
+    
+
+    <!-- =====================================
+         FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+    ===================================== -->
+    
+
+
+
+    <!-- =====================================
+         FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+    ===================================== -->
+    
+
+
+    <!-- WHAT IS AUTISM SECTION -->
+    <section class="autism-section" id="autism">
+      <div class="container">
+
+        <!-- Section Heading -->
+        <div class="autism-heading">
+          <span class="section-tag">UNDERSTANDING AUTISM</span>
+
+          <h2>
+            What Is <span>Autism?</span>
+          </h2>
+
+          <p>
+            Every child is unique. Understanding autism helps us
+            recognise individual strengths, understand different
+            needs, and create opportunities for growth.
+          </p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="autism-main">
+
+          <div class="autism-image">
+            <img src="assets/images/what-is-autism.jpg" alt="Inclusive child development and autism awareness"
+              loading="lazy">
+          </div>
+
+          <div class="autism-description">
+
+            <h3>Understanding the World Through a Different Lens</h3>
+
+            <p>
+              Autism is a condition that makes every child experience the world in their own way. It can affect how
+              children speak, communicate, learn, play, and interact with others.
+            </p>
+
+            <p>
+              Every child with autism is different. Some children may need extra help with speaking or learning, while
+              others may experience sounds, lights, or everyday activities differently.
+            </p>
+
+            <p>
+              With love, patience, the right support, and guidance, children with autism can learn new skills, grow with
+              confidence, and enjoy everyday activities. </p>
+
+            <a href="#contact" class="autism-cta">
+              Talk to Our Experts <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================
+         CUSTOMER TESTIMONIALS SECTION
+    ===================================== -->
+    
+
+    <!-- =====================================
+         FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+    ===================================== -->
+    
+
+
+
+    <!-- =====================================
+         FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+    ===================================== -->
+    
+
+
+    <!-- OUR THERAPIES SECTION -->
+    <section class="therapies-section" id="therapies">
+      <div class="container">
+
+        <div class="therapies-heading">
+          <span class="section-eyebrow">OUR SPECIALIZED THERAPIES</span>
+          <h2>Helping Every Child <span>Grow &amp; Thrive</span></h2>
+          <p>
+            Every child is unique. Our evidence-based therapies focus on nurturing strengths,
+            developing vital everyday skills, and supporting individual progress in a calm, encouraging setting.
+          </p>
+        </div>
+
+        <div class="therapy-showcase-grid">
+
+          <!-- 01. Occupational Therapy -->
+          <a href="occupational-therapy.html" class="therapy-tile"
+            aria-label="Occupational Therapy Information and Guide">
+            <div class="therapy-tile-header">
+              <span class="therapy-tile-num">01</span>
+              <div class="therapy-tile-icon" aria-hidden="true">
+                <i class="fa-solid fa-shapes"></i>
+              </div>
+            </div>
+            <h3 class="therapy-tile-title">Occupational Therapy</h3>
+            <p class="therapy-tile-tagline">Motor skills &amp; daily independence</p>
+            <div class="therapy-tile-action">
+              <span>Read Guide</span>
+              <span class="therapy-tile-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <!-- 02. Behavioral Therapy -->
+          <a href="behavioral-therapy.html" class="therapy-tile" aria-label="Behavioral Therapy Information and Guide">
+            <div class="therapy-tile-header">
+              <span class="therapy-tile-num">02</span>
+              <div class="therapy-tile-icon" aria-hidden="true">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+            </div>
+            <h3 class="therapy-tile-title">Behavioral Therapy</h3>
+            <p class="therapy-tile-tagline">Emotional regulation &amp; positive habits</p>
+            <div class="therapy-tile-action">
+              <span>Read Guide</span>
+              <span class="therapy-tile-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <!-- 03. Speech Therapy -->
+          <a href="speech-therapy.html" class="therapy-tile" aria-label="Speech Therapy Information and Guide">
+            <div class="therapy-tile-header">
+              <span class="therapy-tile-num">03</span>
+              <div class="therapy-tile-icon" aria-hidden="true">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+            </div>
+            <h3 class="therapy-tile-title">Speech Therapy</h3>
+            <p class="therapy-tile-tagline">Communication, clarity &amp; expression</p>
+            <div class="therapy-tile-action">
+              <span>Read Guide</span>
+              <span class="therapy-tile-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <!-- 04. Sensory Integration -->
+          <a href="sensory-integration-therapy.html" class="therapy-tile"
+            aria-label="Sensory Integration Therapy Information and Guide">
+            <div class="therapy-tile-header">
+              <span class="therapy-tile-num">04</span>
+              <div class="therapy-tile-icon" aria-hidden="true">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+            </div>
+            <h3 class="therapy-tile-title">Sensory Integration</h3>
+            <p class="therapy-tile-tagline">Sensory processing &amp; balance</p>
+            <div class="therapy-tile-action">
+              <span>Read Guide</span>
+              <span class="therapy-tile-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <!-- 05. Special Education -->
+          <a href="special-education.html" class="therapy-tile" aria-label="Special Education Information and Guide">
+            <div class="therapy-tile-header">
+              <span class="therapy-tile-num">05</span>
+              <div class="therapy-tile-icon" aria-hidden="true">
+                <i class="fa-solid fa-book-open-reader"></i>
+              </div>
+            </div>
+            <h3 class="therapy-tile-title">Special Education</h3>
+            <p class="therapy-tile-tagline">Personalized learning &amp; guidance</p>
+            <div class="therapy-tile-action">
+              <span>Read Guide</span>
+              <span class="therapy-tile-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Therapy Bottom Message -->
+        <div class="therapy-footer">
+          <p>Small steps today. Brighter possibilities tomorrow.</p>
+          <a href="contact.html">Talk to Our Team <span>↗</span></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================
+         CUSTOMER TESTIMONIALS SECTION
+    ===================================== -->
+    
+
+    <!-- =====================================
+         FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+    ===================================== -->
+    
+
+
+
+    <!-- =====================================
+         FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+    ===================================== -->
+    
+
+    <!-- SIGNS OF AUTISM SECTION -->
+    <section class="autism-signs-section" id="autism-signs">
+      <div class="container">
+
+        <div class="signs-layout">
+
+          <!-- Left Content -->
+          <div class="signs-intro">
+            <span class="section-eyebrow">A GUIDE FOR PARENTS</span>
+
+            <h2>
+              Signs of Autism<br>
+              <span>in Your Child</span>
+            </h2>
+
+            <p>
+              Every child grows in their own way. Some children with autism
+              may communicate, play, learn, or respond to everyday
+              experiences differently.
+            </p>
+
+            <p>
+              Understanding these signs can help parents know when
+              to seek guidance and support.
+            </p>
+
+            <a href="#contact" class="signs-cta">
+              Talk to Our Team <span>↗</span>
+            </a>
+          </div>
+
+          <!-- Right Signs Grid -->
+          <div class="signs-grid">
+
+            <article class="sign-card">
+              <div class="sign-icon">
+                <span>01</span>
+                <i class="fa-regular fa-comments"></i>
+              </div>
+              <h3>Communication</h3>
+              <p>
+                May have difficulty expressing needs, speaking,
+                or understanding words and gestures.
+              </p>
+            </article>
+
+            <article class="sign-card">
+              <div class="sign-icon">
+                <span>02</span>
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <h3>Social Interaction</h3>
+              <p>
+                May find it difficult to interact, share interests,
+                or connect with other children.
+              </p>
+            </article>
+
+            <article class="sign-card">
+              <div class="sign-icon">
+                <span>03</span>
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </div>
+              <h3>Repeated Actions</h3>
+              <p>
+                May repeat certain movements, words,
+                or ways of playing.
+              </p>
+            </article>
+
+            <article class="sign-card">
+              <div class="sign-icon">
+                <span>04</span>
+                <i class="fa-solid fa-ear-listen"></i>
+              </div>
+              <h3>Sensory Responses</h3>
+              <p>
+                May react differently to sounds, lights,
+                textures, or everyday sensations.
+              </p>
+            </article>
+
+            <article class="sign-card">
+              <div class="sign-icon">
+                <span>05</span>
+                <i class="fa-solid fa-puzzle-piece"></i>
+              </div>
+              <h3>Play & Interests</h3>
+              <p>
+                May have strong interests in particular
+                toys, activities, or subjects.
+              </p>
+            </article>
+
+            <article class="sign-card">
+              <div class="sign-icon">
+                <span>06</span>
+                <i class="fa-regular fa-calendar"></i>
+              </div>
+              <h3>Daily Routines</h3>
+              <p>
+                May prefer familiar routines and find
+                unexpected changes difficult.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+        <!-- Parent Note -->
+        <div class="signs-note">
+          <div class="signs-note-icon">i</div>
+          <div>
+            <h3>Every Child Is Different</h3>
+            <p>
+              These signs are general observations, not a diagnosis.
+              Not every autistic child shows the same signs.
+              If you have concerns about your child's development,
+              speak with a qualified professional.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================
+         CUSTOMER TESTIMONIALS SECTION
+    ===================================== -->
+    
+
+    <!-- =====================================
+         FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+    ===================================== -->
+    
+
+
+
+    <!-- =====================================
+         FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+    ===================================== -->
+    
+
+    <!-- OUR SPECIALIZED TEAM -->
+    <section class="specialized-team-section" id="team">
+      <div class="container">
+
+        <div class="team-heading">
+          <span class="section-eyebrow">MEET OUR TEAM</span>
+          <h2>Our Specialized Team</h2>
+          <p>
+            A caring and dedicated team committed to supporting
+            every child's growth, learning, and development.
+          </p>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- Team Member 1 -->
+          <article class="team-card">
+            <div class="team-image">
+              <img src="assets/images/team-member-01.jpg" alt="Dr. Ananya Sharma" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3>Dr. Ananya Sharma</h3>
+              <p>Clinical Psychologist</p>
+            </div>
+          </article>
+
+          <!-- Team Member 2 -->
+          <article class="team-card">
+            <div class="team-image">
+              <img src="assets/images/team-member-02.jpg" alt="Rahul Varma" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3>Rahul Varma</h3>
+              <p>Occupational Therapist</p>
+            </div>
+          </article>
+
+          <!-- Team Member 3 -->
+          <article class="team-card">
+            <div class="team-image">
+              <img src="assets/images/team-member-03.jpg" alt="Priya Reddy" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3>Priya Reddy</h3>
+              <p>Speech Therapist</p>
+            </div>
+          </article>
+
+          <!-- Team Member 4 -->
+          <article class="team-card">
+            <div class="team-image">
+              <img src="assets/images/team-member-04.jpg" alt="Kiran Kumar" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3>Kiran Kumar</h3>
+              <p>Behaviour Therapist</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================
+         CUSTOMER TESTIMONIALS SECTION
+    ===================================== -->
+    <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+
+        <div class="testimonials-header">
+          <span class="section-eyebrow">VOICES OF PARENTS</span>
+          <h2 id="testimonials-heading">Stories of <span>Hope &amp; Growth</span></h2>
+          <p>
+            Read how personalized, compassionate therapy at CRCT has empowered children
+            to communicate, build coordination, and thrive with everyday confidence.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card">
+            <div class="testimonial-card-top">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="testimonial-tag">Speech &amp; Sensory</span>
+            </div>
+
+            <p class="testimonial-quote">
+              &ldquo;Before joining CRCT, our 5-year-old son Aarav struggled to express his needs and would become overwhelmed in noisy classrooms. The therapists here showed incredible warmth and patience. Within a few months, he began speaking in full sentences and now looks forward to attending his sessions every week.&rdquo;
+            </p>
+
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">
+                <span>RM</span>
+              </div>
+              <div class="author-meta">
+                <h3 class="author-name">Radhika &amp; Suresh M.</h3>
+                <p class="author-relation">Parents of Aarav (Age 5) &bull; Visakhapatnam</p>
+                <span class="verified-family"><i class="fa-solid fa-circle-check"></i> Verified Family</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card">
+            <div class="testimonial-card-top">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="testimonial-tag">Occupational Therapy</span>
+            </div>
+
+            <p class="testimonial-quote">
+              &ldquo;Rohan found holding a pencil and writing very frustrating, often breaking down during homework. The occupational therapists at CRCT used playful exercises and fine motor games that made hand strengthening joyful. His school teachers have noticed a wonderful improvement in his handwriting and focus.&rdquo;
+            </p>
+
+            <div class="testimonial-author">
+              <div class="author-avatar author-avatar-2" aria-hidden="true">
+                <span>RV</span>
+              </div>
+              <div class="author-meta">
+                <h3 class="author-name">Rajesh Varma</h3>
+                <p class="author-relation">Father of Rohan (Age 6) &bull; Maharanipeta</p>
+                <span class="verified-family"><i class="fa-solid fa-circle-check"></i> Verified Family</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card">
+            <div class="testimonial-card-top">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+              </div>
+              <span class="testimonial-tag">Behavioral Guidance</span>
+            </div>
+
+            <p class="testimonial-quote">
+              &ldquo;What truly sets CRCT apart is how actively they involve parents. They didn't just conduct sessions with Anvi; they taught us gentle home strategies for emotional regulation and morning transitions. The centre is peaceful, hygienic, and filled with genuine compassion for every child.&rdquo;
+            </p>
+
+            <div class="testimonial-author">
+              <div class="author-avatar author-avatar-3" aria-hidden="true">
+                <span>DN</span>
+              </div>
+              <div class="author-meta">
+                <h3 class="author-name">Divya Narayana</h3>
+                <p class="author-relation">Mother of Anvi (Age 4) &bull; MVP Colony</p>
+                <span class="verified-family"><i class="fa-solid fa-circle-check"></i> Verified Family</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Trust summary strip -->
+        <div class="testimonials-trust-strip">
+          <div class="trust-stat">
+            <span class="stat-number">4.9 / 5.0</span>
+            <span class="stat-label">Average Parent Rating</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-stat">
+            <span class="stat-number">1-on-1</span>
+            <span class="stat-label">Personalized Therapy Care</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Family-Centered Guidance</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================
+         FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+    ===================================== -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+
+        <div class="faq-header">
+          <span class="section-eyebrow">COMMON QUESTIONS</span>
+          <h2 id="faq-heading">Frequently Asked <span>Questions</span></h2>
+          <p>
+            Find clear, compassionate answers to the questions parents ask most when
+            considering therapy and developmental support for their children.
+          </p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+
+          <!-- FAQ 1 -->
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>What happens during our first visit to CRCT?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  Our therapists meet your child in a friendly, playful setting to understand their speech, movement, and daily habits. We then discuss simple, personalized next steps with you.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How do I know which therapy my child needs?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  You don't need to decide in advance. Our team evaluates your child's strengths and suggests the right support—whether speech, motor skills, or behavioral guidance.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What is the best age to begin therapy?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  The earlier, the better. Early guidance between ages 2 and 7 helps children learn skills faster and gives parents quick peace of mind.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can parents stay during the therapy sessions?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  Yes, absolutely. Parents are always welcome. We also guide you with easy, fun activities to practice at home with your child.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <!-- FAQ 5 -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How many days a week are sessions held?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  Most children attend 2 to 3 sessions per week. We review your child's progress regularly and adjust the schedule to fit your family's routine.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <!-- FAQ 6 -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How can we book an appointment?</span>
+              <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  Simply call us at <a href="tel:+917416778925">+91 7416778925</a> or message us through our <a href="contact.html">Contact page</a>. We are open every day from Monday to Sunday.
+                </p>
+              </div>
+            </div>
+          </details>
+
+        </div>
+
+        <script>
+          (function() {
+            var items = document.querySelectorAll('#faqAccordion details.faq-item');
+            items.forEach(function(item) {
+              item.addEventListener('toggle', function() {
+                if (item.open) {
+                  items.forEach(function(other) {
+                    if (other !== item && other.open) {
+                      other.open = false;
+                    }
+                  });
+                }
+              });
+            });
+          })();
+        </script>
+
+        <!-- FAQ Assistance Box -->
+        <div class="faq-support-box">
+          <div class="faq-support-content">
+            <h3>Have More Questions About Your Child's Journey?</h3>
+            <p>Our compassionate team is always here to listen, answer questions, and help you take the right next step.</p>
+          </div>
+          <div class="faq-support-actions">
+            <a href="tel:+917416778925" class="btn-faq-call"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 7416778925</a>
+            <a href="contact.html" class="btn-faq-contact">Send an Enquiry <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================
+       CRCT WEBSITE FOOTER
+  ===================================== -->
+<footer class="crct-footer" id="contact">
+
+    <div class="container">
+
+      <div class="footer-main">
+
+        <!-- Brand Information -->
+        <div class="footer-brand">
+
+          <a href="index.html" class="footer-logo" aria-label="CRCT Home">
+            <img src="assets/logo/crct-logo.png" alt="Carl Rogers Counselling and Therapy Centre">
+          </a>
+
+          <p>
+            Carl Rogers Counselling and Therapy Centre is dedicated
+            to supporting children and families through compassionate
+            care, guidance, and professional therapy services.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#autism">What Is Autism?</a></li>
+            <li><a href="index.html#autism-signs">Signs of Autism</a></li>
+            <li><a href="index.html#team">Our Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Therapies -->
+        <div class="footer-column">
+          <h3>Our Therapies</h3>
+
+          <ul>
+            <li><a href="occupational-therapy.html">Occupational Therapy</a></li>
+            <li><a href="behavioral-therapy.html">Behavioral Therapy</a></li>
+            <li><a href="speech-therapy.html">Speech Therapy</a></li>
+            <li><a href="sensory-integration-therapy.html">Sensory Integration</a></li>
+            <li><a href="special-education.html">Special Education</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-column footer-contact">
+          <h3>Get in Touch</h3>
+
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+              Door No: 14-37-4/A, 4th Floor,<br>
+              Opp. Vijaya Medical Centre,<br>
+              Krishna Nagar, Maharanipeta,<br>
+              Visakhapatnam, A.P. – 530002.
+            </p>
+          </div>
+
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+917416778925">+91 7416778925</a>
+          </div>
+
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:crct.vizag@gmail.com">
+              crct.vizag@gmail.com
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Working Hours -->
+      <div class="footer-hours">
+        <div>
+          <i class="fa-regular fa-clock"></i>
+          <strong>Working Hours</strong>
+        </div>
+
+        <p>
+          Monday – Sunday:
+          <span>10:00 AM – 01:00 PM</span>
+          <span class="footer-hours-separator">|</span>
+          <span>03:00 PM – 09:00 PM</span>
+        </p>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+
+        <p>
+          © <span id="footer-year" class="footer-year">2026</span>
+          Carl Rogers Counselling and Therapy Centre.
+          All Rights Reserved.
+        </p>
+
+        <a href="#crctHeader" class="footer-back-top" aria-label="Back to Top">
+          Back to Top <span>↑</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="js/carousel.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
